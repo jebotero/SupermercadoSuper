@@ -1,0 +1,19 @@
+{
+  "name": "--watch",
+  "version": "1.0.0",
+  "description": "npm install -g json-server",
+  "main": "db1.json",
+  "scripts": {
+    "test": "json-server --watch db.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://localhost:3000/"
+  },
+  "author": "Jaime Eduardo Botero Gomez",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  }
+}
