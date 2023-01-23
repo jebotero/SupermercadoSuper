@@ -1,15 +1,23 @@
 //GET
-const listaProductos = () =>
+const listaProductos = () => {
   fetch(`http://localhost:3000/producto`)
     .then((resposta) => resposta.json())
     .catch((error) => console.log(error));
-    
+}
+
 const listarUnProduto = (id) => {
   return fetch(`http://localhost:3000/producto/${id}`).then((resposta) => {
     return resposta.json();
   });
 };
-
+  
+const buscarProductos = () => {
+  fetch(`http://localhost:3000/producto/`)
+    .then((resposta) => resposta.json())
+    .then(jsonData => {
+        data = jsonData;
+}).catch((error) => console.log(error));
+}
 
 //POST
 const creaProdutos = (name, imageUrl, price, description) => {
@@ -67,5 +75,6 @@ export const productoServices = {
   listarUnProduto,
   creaProdutos,
   alteraProduto,
-  deleteProducto
+  deleteProducto,
+  buscarProductos
 };

@@ -57,7 +57,7 @@ header {
 nav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: row;
 }
 
@@ -102,11 +102,32 @@ nav {
   background-position-x: 320px;
 }
 
-.login {
+.buscar {
   width: 600px;
   display: flex;
   justify-content: end;
 }
+
+.buscar button{
+  width: 182px;
+  height: 51px;
+  background: none;
+  border: solid 1px var(--azul-destaque);
+  color: var(--azul-destaque);
+  text-transform: uppercase;
+}
+
+.buscar button:hover {
+  background-color: var(--azul-destaque);
+  color: var(--texto-destaque);
+}
+
+.login {
+  width: 200px;
+  display: flex;
+  justify-content: end;
+}
+
 
 .login button {
   width: 182px;
@@ -121,6 +142,7 @@ nav {
   background-color: var(--azul-destaque);
   color: var(--texto-destaque);
 }
+
 
 /*---------------Formulario Footer---------------*/
 

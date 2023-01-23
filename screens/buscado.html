@@ -9,29 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"/>
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/products.css">
-    <title>Producto</title>
+    <title>Busquedas</title>
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo-busca">
+        <div class="logo-busqueda">
           <div class="logo">
             <img src="../assets/logo.png" alt="logo" />
             <p class="logo-azul">Supermercado</p>
             <p>Super</p>
+            <div class="buscar">
+              <input id="search-input" type="text" placeholder="Qué deseas buscar?"/>
+              <button type="button" value="Buscar">Buscar</button>
           </div>
-          <input i type="text" placeholder="Qué deseas buscar?" />
+          </div>
+        </div>
+        <div class="login">
+          <a href="login.html">
+            <button type="submit">Login</button></a>
         </div>
       </nav>
     </header>
 
-    <section class="geral-products">
-      <div class="products_title">
-        <span>Todos los produtos</span> 
-        <a href="../screens/add-products.html"> <button class="product-button">Agregar Producto</button> </a>
-      </div>
+    <section class="geral-products"> 
 
-      <section class="products-section" data-allProducts>
+    <section class="products-section" data-allProducts>
         
       </section>
     </section>
@@ -74,6 +77,6 @@
       </div>
     </section>
 
-  <script type="module" src="../controllers/lista-productos.js"></script>
+  <script type="module" src="../controllers/buscar-productos.js"></script>
 </body>
 </html>
