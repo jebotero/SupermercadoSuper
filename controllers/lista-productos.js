@@ -58,7 +58,8 @@ const render = async () => {
           producto.name,
           producto.imageUrl,
           producto.price,
-          producto.description
+          producto.description,
+          producto.id
         )
       );
     });

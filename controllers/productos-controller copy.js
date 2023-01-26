@@ -30,7 +30,7 @@ const render = async () => {
   try {
     const listaProductos = await productoServices.listaProductos();
       listaProductos.forEach((elemento) => {             
-        if(elemento.tipo === "Frutas")
+        if(elemento.tipo === "Frutas") {
           frutas.appendChild(
             nuevoProduto(
               elemento.name,
@@ -38,7 +38,8 @@ const render = async () => {
               elemento.price,
               elemento.description
             ));
-      else if(elemento.tipo === "Lacteos")
+        } 
+        else if(elemento.tipo === "Lacteos") {
           lacteos.appendChild(
             nuevoProduto(
               elemento.name,
@@ -46,7 +47,8 @@ const render = async () => {
               elemento.price,
               elemento.description
             ));
-      else if(elemento.tipo === "Granos")
+        }
+      else if(elemento.tipo === "Granos") {
           granos.appendChild(
             nuevoProduto(
               elemento.name,
@@ -54,6 +56,7 @@ const render = async () => {
               elemento.price,
               elemento.description
             ));
+      }
        else if(elemento.tipo === "Mar")
           mar.appendChild(
             nuevoProduto(

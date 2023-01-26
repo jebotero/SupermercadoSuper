@@ -139,13 +139,6 @@
       "price": "10950",
       "description": "Recipiente de 400 gramos, mantengase refrigerado ",
       "id": 23
-    },
-    {
-      "name": "Yogurt Alqueria",
-      "imageUrl": "../assets/alqueria_yogurt.png",
-      "price": "9890",
-      "description": "Paquete con 4 unidades de Yogurt",
-      "id": 25
     }
   ]
 }

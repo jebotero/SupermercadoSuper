@@ -4,9 +4,9 @@ const listaProductos = () =>
     .then((resposta) => resposta.json())
     .catch((error) => console.log(error));
 
-
 const listarUnProduto = (id) => {
-  return fetch(`http://localhost:3000/producto/${id}`).then((resposta) => {
+  return fetch(`http://localhost:3000/producto/${id}`)
+  .then((resposta) => {
     return resposta.json();
   });
 };
@@ -43,8 +43,7 @@ const alteraProduto = async (name, imageUrl, price, description, id) => {
       name,
       imageUrl,
       price,
-      description,
-      id
+      description
     }),
   })
     .then((resposta) => {
@@ -68,5 +67,5 @@ export const productoServices = {
   listarUnProduto,
   creaProdutos,
   alteraProduto,
-  deleteProducto,
+  deleteProducto
 };
