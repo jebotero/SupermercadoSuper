@@ -29,54 +29,56 @@ const granos = document.querySelector("[data-granos]");
 const render = async () => {
   try {
     const listaProductos = await productoServices.listaProductos();
-      listaProductos.forEach((elemento) => {             
-        if(elemento.tipo === "Frutas") {
-          frutas.appendChild(
-            nuevoProduto(
-              elemento.name,
-              elemento.imageUrl,
-              elemento.price,
-              elemento.description
-            ));
-        } 
-        else if(elemento.tipo === "Lacteos") {
-          lacteos.appendChild(
-            nuevoProduto(
-              elemento.name,
-              elemento.imageUrl,
-              elemento.price,
-              elemento.description
-            ));
-        }
-      else if(elemento.tipo === "Granos") {
-          granos.appendChild(
-            nuevoProduto(
-              elemento.name,
-              elemento.imageUrl,
-              elemento.price,
-              elemento.description
-            ));
+    listaProductos.forEach((elemento) => {
+      if (elemento.tipo === "Frutas") {
+        frutas.appendChild(
+          nuevoProduto(
+            elemento.name,
+            elemento.imageUrl,
+            elemento.price,
+            elemento.description
+          ));
       }
-       else if(elemento.tipo === "Mar")
-          mar.appendChild(
-            nuevoProduto(
-              elemento.name,
-              elemento.imageUrl,
-              elemento.price,
-              elemento.description
-            ));
-      else if(elemento.tipo === "Verduras")
-          verduras.appendChild(
-              nuevoProduto(
-                elemento.name,
-                elemento.imageUrl,
-                elemento.price,
-                elemento.description
-              ));
-      });
-    } catch(erro) {
-      console.log(erro);
-    }
+      else if (elemento.tipo === "Lacteos") {
+        lacteos.appendChild(
+          nuevoProduto(
+            elemento.name,
+            elemento.imageUrl,
+            elemento.price,
+            elemento.description
+          ));
+      }
+      else if (elemento.tipo === "Granos") {
+        granos.appendChild(
+          nuevoProduto(
+            elemento.name,
+            elemento.imageUrl,
+            elemento.price,
+            elemento.description
+          ));
+      }
+      else if (elemento.tipo === "Mar") {
+        mar.appendChild(
+          nuevoProduto(
+            elemento.name,
+            elemento.imageUrl,
+            elemento.price,
+            elemento.description
+          ));
+      }
+      else if (elemento.tipo === "Verduras") {
+        verduras.appendChild(
+          nuevoProduto(
+            elemento.name,
+            elemento.imageUrl,
+            elemento.price,
+            elemento.description
+          ));
+      }
+    });
+  } catch (erro) {
+    console.log(erro);
+  }
 };
 
 render();

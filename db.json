@@ -4,6 +4,7 @@
       "name": "Camaron titi",
       "imageUrl": "../assets/camaron_titi_vaquita_500g_pescados_y_mariscos_223x223.png",
       "price": "45750.00",
+      "tipo": "Mar",
       "description": "500 gramos, empacado en bolsa plastica, mantenerse congelado",
       "id": 2
     },
@@ -11,6 +12,7 @@
       "name": "Filete tilapia",
       "imageUrl": "../assets/filete_tilapia_pesco_1000g_pescados_y_mariscos_223x223.png",
       "price": "32750.00",
+      "tipo": "Mar",
       "description": "1000 gramos, empacado en bolsa plastica, mantenerse congelado",
       "id": 4
     },
@@ -18,6 +20,7 @@
       "name": "Zanahorias",
       "imageUrl": "../assets/zanahoria_1000x_1950.png",
       "price": "1950.00",
+      "tipo": "Frutas",
       "description": "1000 gramos, mantenerse refrigerado para mayor duración",
       "id": 6
     },
@@ -25,6 +28,7 @@
       "name": "Banano criollo",
       "imageUrl": "../assets/banano_criollo_500gr.png",
       "price": "937.00",
+      "tipo": "Frutas",
       "description": "500 gramos, aproximadamente 5 bananos",
       "id": 7
     },
@@ -32,6 +36,7 @@
       "name": "Platano verde",
       "imageUrl": "../assets/platano_verde_1000gr.png",
       "price": "3390.00",
+      "tipo": "Frutas",
       "description": "1000 gramos",
       "id": 8
     },
@@ -39,6 +44,7 @@
       "name": "Papa criolla",
       "imageUrl": "../assets/papa_criolla_1000gr.png",
       "price": "6150.00",
+      "tipo": "Verduras",
       "description": "1000 gramos, se recomienda tener refrigerada para mayor duración",
       "id": 9
     },
@@ -46,6 +52,7 @@
       "name": "Platano maduro",
       "imageUrl": "../assets/platano_maduro_1000gr.png",
       "price": "3390",
+      "tipo": "Frutas",
       "description": "1000 gramos",
       "id": 10
     },
@@ -53,6 +60,7 @@
       "name": "Pepino cohombro",
       "imageUrl": "../assets/peplino_cohombro_500gr.png",
       "price": "1312.00",
+      "tipo": "Verduras",
       "description": "1000 gramos, se recomienda tener refrigerado",
       "id": 11
     },
@@ -60,6 +68,7 @@
       "name": "Tomate chonto",
       "imageUrl": "../assets/tomate_chonto_1000gr.png",
       "price": "4635.00",
+      "tipo": "Verduras",
       "description": "1000 gramos, se recomienda tener refrigerado",
       "id": 12
     },
@@ -67,6 +76,7 @@
       "name": "Cebolla junca",
       "imageUrl": "../assets/cebolla_junca_500gr.png",
       "price": "2512.00",
+      "tipo": "Verduras",
       "description": "500 gramos, se recomienda tener refrigerado",
       "id": 13
     },
@@ -74,6 +84,7 @@
       "name": "Cebolla roja",
       "imageUrl": "../assets/cebolla_roja_500gr.png",
       "price": "1687.00",
+      "tipo": "Verduras",
       "description": "500 gramos, se recomienda tener refrigerado",
       "id": 14
     },
@@ -81,6 +92,7 @@
       "name": "Cebolla blanca",
       "imageUrl": "../assets/cebolla_blanca_500gr.png",
       "price": "3712.00",
+      "tipo": "Verduras",
       "description": "500 gramos, se recomienda tener refrigerado",
       "id": 15
     },
@@ -88,6 +100,7 @@
       "name": "Frijol caraota",
       "imageUrl": "../assets/frijol_caraota_el_13_500g_granos_1_223x223.png",
       "price": "2290.00",
+      "tipo": "Granos",
       "description": "500 gramos, vine empacado en bolsa de plástico",
       "id": 16
     },
@@ -95,6 +108,7 @@
       "name": "Frijol cargamanto",
       "imageUrl": "../assets/frijol_cargamanto_rojo_223x223.png",
       "price": "7100.00",
+      "tipo": "Granos",
       "description": "500 gramos, vine empacado en bolsa de plástico",
       "id": 17
     },
@@ -102,6 +116,7 @@
       "name": "Arroz Roa",
       "imageUrl": "../assets/arroz_roa.png",
       "price": "2290.00",
+      "tipo": "Granos",
       "description": "500 gramos, vine empacado en bolsa de plástico",
       "id": 18
     },
@@ -109,6 +124,7 @@
       "name": "Arroz Diana coco",
       "imageUrl": "../assets/arroz_diana_coco.png",
       "price": "3100.00",
+      "tipo": "Granos",
       "description": "500 gramos, se recomienda tener refrigerado",
       "id": 19
     },
@@ -116,6 +132,7 @@
       "name": "Garbanzo",
       "imageUrl": "../assets/garbanzo_el_13_460gr_granos_223x223.png",
       "price": "3800.00",
+      "tipo": "Granos",
       "description": "460 gramos, se recomienda tener refrigerado",
       "id": 20
     },
@@ -123,6 +140,7 @@
       "name": "Crema de leche Alqueria",
       "imageUrl": "../assets/crema_leche_alqueria_200cc.png",
       "price": "4190",
+      "tipo": "Lacteos",
       "description": "200 cc, viene en bolsa segun la imagen, una vez abierta mantengase refrigerada",
       "id": 21
     },
@@ -130,6 +148,7 @@
       "name": "Leche Alquería deslactosada",
       "imageUrl": "../assets/leche_alqueria_deslactosada.png",
       "price": "31990",
+      "tipo": "Lacteos",
       "description": "Paquete de 6 bolsas de 1.1 litros",
       "id": 22
     },
@@ -137,6 +156,7 @@
       "name": "Crema agria Colanta",
       "imageUrl": "../assets/crema_agria_colanta.png",
       "price": "10950",
+      "tipo": "Lacteos",
       "description": "Recipiente de 400 gramos, mantengase refrigerado ",
       "id": 23
     }
