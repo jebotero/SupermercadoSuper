@@ -130,22 +130,22 @@
       "name": "Leche Alquería deslactosada",
       "imageUrl": "../assets/leche_alqueria_deslactosada.png",
       "price": "31990",
-      "id": 22,
-      "description": "Paquete de 6 bolsas de 1.1 litros"
+      "description": "Paquete de 6 bolsas de 1.1 litros",
+      "id": 22
     },
     {
       "name": "Crema agria Colanta",
       "imageUrl": "../assets/crema_agria_colanta.png",
       "price": "10950",
-      "id": 23,
-      "description": "Recipiente de 400 gramos, mantengase refrigerado "
+      "description": "Recipiente de 400 gramos, mantengase refrigerado ",
+      "id": 23
     },
     {
       "name": "Yogurt Alqueria",
       "imageUrl": "../assets/alqueria_yogurt.png",
       "price": "9890",
-      "id": 25,
-      "description": "Paquete con 4 unidades de Yogurt"
+      "description": "Paquete con 4 unidades de Yogurt",
+      "id": 25
     }
   ]
 }

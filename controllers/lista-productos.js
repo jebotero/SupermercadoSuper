@@ -27,6 +27,7 @@ const getProducts = (name, imageUrl, price, description, id) => {
     `;
   card.innerHTML = contenido;
   card.dataset.id = id;
+  console.log(card);
   return card;
 };
 
@@ -57,13 +58,12 @@ const render = async () => {
           producto.name,
           producto.imageUrl,
           producto.price,
-          producto.description,
-          producto.id
+          producto.description
         )
       );
     });
-  } catch (err) {
-    console.log(err);
+  } catch (error) {
+    console.log(error);
   }
 };
 
