@@ -1,7 +1,7 @@
 import { productoServices } from "../servicios/producto-servicios.js";
 import { formatPrice } from "../formatterPrices.js";
 
-const getProducts = (name, imageUrl, price, description, id) => {
+const getProducts = (name, imageUrl, price, tipo, description, id) => {
   const card = document.createElement("div");
 
   const contenido = `
@@ -9,6 +9,7 @@ const getProducts = (name, imageUrl, price, description, id) => {
         <h1 class="product-name"> ${name} </h1>
         <img src="${imageUrl}" alt="img">
         <p class="preco">${formatPrice(price)}</p>
+        <h1 class="product-tipo"> ${tipo} </h1>
         <p class="descripcion"> ${description}</p>
 
         <div class="container">
@@ -58,6 +59,7 @@ const render = async () => {
           producto.name,
           producto.imageUrl,
           producto.price,
+          producto.tipo,
           producto.description,
           producto.id
         )

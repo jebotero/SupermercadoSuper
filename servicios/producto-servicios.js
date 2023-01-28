@@ -12,7 +12,7 @@ const listarUnProduto = (id) => {
 };
 
 //POST
-const creaProdutos = (name, imageUrl, price, description) => {
+const creaProdutos = (name, imageUrl, price, tipo, description) => {
   return fetch(`http://localhost:3000/producto`, {
     method: "POST",
     headers: {
@@ -22,6 +22,7 @@ const creaProdutos = (name, imageUrl, price, description) => {
       name,
       imageUrl,
       price,
+      tipo,
       description
     }),
   }).then((resposta) => {
@@ -33,7 +34,7 @@ const creaProdutos = (name, imageUrl, price, description) => {
 };
 
 // PUT/PATCH
-const alteraProduto = async (name, imageUrl, price, description, id) => {
+const alteraProduto = async (id, name, imageUrl, price, tipo, description) => {
   return fetch(`http://localhost:3000/producto/${id}`, {
     method: "PATCH",
     headers: {
@@ -43,6 +44,7 @@ const alteraProduto = async (name, imageUrl, price, description, id) => {
       name,
       imageUrl,
       price,
+      tipo,
       description
     }),
   })

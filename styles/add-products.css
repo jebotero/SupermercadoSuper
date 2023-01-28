@@ -57,6 +57,7 @@ main {
 .product-add_input__name,
 .product-add_input__url,
 .product-add_input__price,
+.product-add_input__tipo,
 .product-add_textarea__description {
     width: 40%;
     display: flex;

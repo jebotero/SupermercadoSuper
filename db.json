@@ -5,7 +5,7 @@
       "imageUrl": "../assets/camaron_titi_vaquita_500g_pescados_y_mariscos_223x223.png",
       "price": "45750.00",
       "tipo": "Mar",
-      "description": "500 gramos, empacado en bolsa plastica, mantenerse congelado",
+      "description": "500 gramos, bolsa plastica, mantenerse congelado",
       "id": 2
     },
     {
@@ -15,14 +15,6 @@
       "tipo": "Mar",
       "description": "1000 gramos, empacado en bolsa plastica, mantenerse congelado",
       "id": 4
-    },
-    {
-      "name": "Zanahorias",
-      "imageUrl": "../assets/zanahoria_1000x_1950.png",
-      "price": "1950.00",
-      "tipo": "Frutas",
-      "description": "1000 gramos, mantenerse refrigerado para mayor duración",
-      "id": 6
     },
     {
       "name": "Banano criollo",
@@ -37,14 +29,14 @@
       "imageUrl": "../assets/platano_verde_1000gr.png",
       "price": "3390.00",
       "tipo": "Frutas",
-      "description": "1000 gramos",
+      "description": "1000 gr. mantener refrigerado para que no se madure",
       "id": 8
     },
     {
       "name": "Papa criolla",
       "imageUrl": "../assets/papa_criolla_1000gr.png",
       "price": "6150.00",
-      "tipo": "Verduras",
+      "tipo": "Frutas",
       "description": "1000 gramos, se recomienda tener refrigerada para mayor duración",
       "id": 9
     },
@@ -137,14 +129,6 @@
       "id": 20
     },
     {
-      "name": "Crema de leche Alqueria",
-      "imageUrl": "../assets/crema_leche_alqueria_200cc.png",
-      "price": "4190",
-      "tipo": "Lacteos",
-      "description": "200 cc, viene en bolsa segun la imagen, una vez abierta mantengase refrigerada",
-      "id": 21
-    },
-    {
       "name": "Leche Alquería deslactosada",
       "imageUrl": "../assets/leche_alqueria_deslactosada.png",
       "price": "31990",
@@ -159,6 +143,54 @@
       "tipo": "Lacteos",
       "description": "Recipiente de 400 gramos, mantengase refrigerado ",
       "id": 23
+    },
+    {
+      "imageUrl": "../assets/camaron_tigre.png",
+      "price": "60850",
+      "tipo": "Mar",
+      "description": "700 gr. Bolsa plastica, mantener en congelador",
+      "id": 26,
+      "name": "Camaron tigre"
+    },
+    {
+      "imageUrl": "../assets/trucha_mariposa.png",
+      "price": "37350",
+      "tipo": "Mar",
+      "description": "500 gr. Bolsa plastica, mantener congelado",
+      "id": 27,
+      "name": "Trucha mariposa"
+    },
+    {
+      "name": "Filete de salmon",
+      "imageUrl": "../assets/filete_salmon.png",
+      "price": "39450",
+      "tipo": "Mar",
+      "description": "400 gr. Bolsa plástica.  Mantener congelado",
+      "id": 28
+    },
+    {
+      "name": "Yogurt Alqueria",
+      "imageUrl": "../assets/alqueria_yogurt.png",
+      "price": "9890",
+      "tipo": "Lacteos",
+      "description": "Paquete con 4 unidades, mantenga refrigerado",
+      "id": 29
+    },
+    {
+      "name": "BonYurt zucaritas Alpina",
+      "imageUrl": "../assets/bonYurt_alpina_zucaritas.png",
+      "price": "14190",
+      "tipo": "Lacteos",
+      "description": "paquete 4 unidades, mantengase refrigerado",
+      "id": 30
+    },
+    {
+      "name": "Crema de leche Alqueria",
+      "imageUrl": "..//assets/crema_leche.png",
+      "price": "4190",
+      "tipo": "Lacteos",
+      "description": "200 cc de crema de leche, larga duración, mantenerse refrigerado desplues de abrirse",
+      "id": 31
     }
   ]
 }
