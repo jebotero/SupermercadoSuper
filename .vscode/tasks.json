@@ -8,6 +8,17 @@
 			"problemMatcher": [],
 			"label": "npm: install",
 			"detail": "install dependencies from package"
+		},
+		{
+			"type": "npm",
+			"script": "test",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [],
+			"label": "npm: test",
+			"detail": "json-server --watch db.json"
 		}
 	]
 }

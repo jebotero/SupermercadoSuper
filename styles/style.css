@@ -23,7 +23,7 @@ body {
 
 /*---------------Padrão de projeto---------------*/
 
- textarea:focus,
+textarea:focus,
 input:focus {
   box-shadow: 0 0 0 0;
   border: 0 none;
@@ -108,7 +108,7 @@ nav {
   justify-content: end;
 }
 
-.buscar button{
+.buscar button {
   width: 182px;
   height: 51px;
   background: none;
@@ -227,7 +227,7 @@ nav {
   transition: 0.5s;
 }
 
-.input-nome:focus + .label-nome {
+.input-nome:focus+.label-nome {
   top: 64px;
   font-size: 14px;
   z-index: 2;
@@ -250,5 +250,3 @@ nav {
   height: 51px;
   width: 180px;
 }
-
-

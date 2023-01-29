@@ -9,10 +9,8 @@ const nuevoProduto = (name, imageUrl, price, tipo, description, id) => {
             <img src="../assets/${imageUrl}" alt="img">        
             <p class="preco">${formatPrice(price)}</p>
             <h1 class="product-tipo"> ${tipo} </h1>
-            <p class="descripcion"> ${description}</p>
-            <a class="ver-produto" href="../produto.html?id=${id}">Ver Produto</a>
-        </div>   
-    `;
+            <p class="descripcion"> ${description}</p>   
+        `;
   card.innerHTML = contenido;
   card.dataset.id = id;
 
@@ -59,6 +57,7 @@ const render = async () => {
             elemento.name,
             elemento.imageUrl,
             elemento.price,
+            elemento.tipo,
             elemento.description,
             elemento.id
           ));
@@ -69,6 +68,7 @@ const render = async () => {
             elemento.name,
             elemento.imageUrl,
             elemento.price,
+            elemento.tipo,
             elemento.description,
             elemento.id
           ));
@@ -79,6 +79,7 @@ const render = async () => {
             elemento.name,
             elemento.imageUrl,
             elemento.price,
+            elemento.tipo,
             elemento.description,
             elemento.id
           ));
@@ -89,6 +90,7 @@ const render = async () => {
             elemento.name,
             elemento.imageUrl,
             elemento.price,
+            elemento.tipo,
             elemento.description,
             elemento.id
           ));
@@ -99,6 +101,7 @@ const render = async () => {
             elemento.name,
             elemento.imageUrl,
             elemento.price,
+            elemento.tipo,
             elemento.description,
             elemento.id
           ));
