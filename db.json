@@ -191,6 +191,34 @@
       "tipo": "Lacteos",
       "description": "200 cc de crema de leche, larga duración, mantenerse refrigerado desplues de abrirse",
       "id": 31
+    },
+    {
+      "name": "Zanahoria",
+      "imageUrl": "../assets/zanahoria.png",
+      "price": "1950",
+      "tipo": "Frutas",
+      "description": "1000 gramos",
+      "id": 32
+    }
+  ],
+  "usuarios" : [
+    {
+    "name": "Jaime Eduardo Botero",
+    "username": "jeboterog@hotmail.com",
+    "password": "1234",
+    "id": 1
+    },
+    {
+    "name": "Nicolas Botero",
+    "username": "niboco@gmail.com",
+    "password": "5678",
+    "id": 2
+    },
+    {
+    "name": "Carmenza Correa",
+    "username": "charmenn.cc@gmail.com",
+    "password": "4321",
+    "id": 3
     }
   ]
 }

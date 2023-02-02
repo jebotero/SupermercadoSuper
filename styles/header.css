@@ -1,0 +1,38 @@
+header {
+    padding: 30px;
+    background-color: var(--texto-destaque);
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-iframe {
+    overflow: hidden;
+    width: 100%;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 29.17px;
+  width: 40.02px;
+}
+
+.logo p {
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.logo .logo-azul {
+  margin-left: 10px;
+  color: var(--azul-destaque);
+}
+
+
+  

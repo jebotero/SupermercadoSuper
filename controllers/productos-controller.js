@@ -9,7 +9,10 @@ const nuevoProduto = (name, imageUrl, price, tipo, description, id) => {
             <img src="../assets/${imageUrl}" alt="img">        
             <p class="preco">${formatPrice(price)}</p>
             <h1 class="product-tipo"> ${tipo} </h1>
-            <p class="descripcion"> ${description}</p>   
+            <p class="descripcion"> ${description}</p>
+            
+            <a class="ver-producto" href="../screens/mostrar-producto.html?id=${id}">Ver Produto</a>
+        </div>   
         `;
   card.innerHTML = contenido;
   card.dataset.id = id;

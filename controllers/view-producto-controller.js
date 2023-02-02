@@ -1,4 +1,4 @@
-import { productoServices } from "../servicios/producto-servicios.js";
+import { productoServices } from "../servicios/producto-servicios.js"
 
 const getURL = new URL(window.location);
 
@@ -24,7 +24,7 @@ formulario.addEventListener("submit", (evento) => {
   evento.preventDefault();
 
   productoServices
-    .alteraProduto(
+    .listarUnProduto(
       id,
       inputNombre.value,
       inputImageUrl.value,

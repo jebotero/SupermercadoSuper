@@ -1,88 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" type="text/css" content="width=device-width, initial-scale=1.0"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"/>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/login.css" />
-    <title>Login</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo-busca">
-          <div class="logo">
-            <img src="../assets/logo.png" alt="logo" />
-            <p class="logo-azul">Supermercado</p>
-            <p>Super</p>
-          </div>
-          <input i type="text" placeholder="Qué deseas buscar?" />
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="login">
-        <div class="login_title">Iniciar Sesión</div>
-        <form action="#" class="form-cadastro" data-form>
-          <input
-            class="login_input__url"
-            type="text"
-            placeholder="Escriba su email"
-            required
-            data-email
-          />
-          <input
-            class="login_input__name"
-            type="password"
-            placeholder="Escriba su contraseña"
-            required
-            data-password
-          />
-          <button type="submit" class="login_btn">Entrar</button>
-        </form>
-      </section>
-    </main>
-  </body>
-  <section class="contato">
-    <div class="referencia">
-      <img src="../assets/logo.png" alt="logo" />
-      <p>Supermercado</p>
-      <p>Super</p>
-    </div>
-    <div class="links-uteis">
-      <a href="">Quienes somos</a>
-      <a href="">Politica de Privacidad</a>
-      <a href="">Programa de fidelidad</a>
-      <a href="">Nuestras tiendas</a>
-      <a href="">Quiero ser franquiciado</a>
-      <a href="">Anuncie aqui</a>
-    </div>
 
-    <div class="form">
-      <p>Hable con nosotros</p>
-      <div class="label-float">
-        <input
-          type="text"
-          name="Nome"
-          id="Nome"
-          class="input-nome"
-          placeholder=""
-        />
-        <label for="Nome" class="label-nome">Nombre</label>
-      </div>
-      <textarea
-        name="mensagem"
-        id="msg"
-        cols="5"
-        rows="5"
-        placeholder="Escriba un mensaje"
-      ></textarea>
-      <button>Enviar Mensaje</button>
-    </div>
-  </section>
-  <script type="module" src="../controllers/login-controller.js"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" type="text/css" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap" />
+
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/footer.css" />
+  <link rel="stylesheet" href="../styles/login.css">
+  <link rel="stylesheet" href="../styles/botones.css">
+  <title>Login</title>
+</head>
+
+<body>
+
+  <iframe class="header-iframe" src="header.html"></iframe>
+
+  <div class="contenedor__todo">
+    <h2>Iniciar Sesión</h2>
+    <form action="" id="form" class="formulario__login" data-login>
+      <label for="username">Correo electronico</label>
+      <input type="text" id="username" placeholder="Correo Electronico" required>
+      <label for="password">Contraseña</label>
+      <input type="password" id="password" placeholder="Contraseña" required>
+      <button type="button" class="boton-login" onclick="validarLogin()">Iniciar sesión</button>
+    </form>
+  </div>
+
+  <script src="../controllers/validar-usuario.js"></script>
+
+</body>
+
+
+<iframe class="footer-iframe" src="footer.html"></iframe>
+
 </html>

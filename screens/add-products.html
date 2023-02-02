@@ -1,116 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ES">
+
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" type='text/css' content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/footer.css" />
+  <link rel="stylesheet" href="../styles/add-products.css" />
+  <link rel="stylesheet" href="../styles/lista-productos.css">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap">
-  <link rel="shortcut icon" type="imagex/png" href="../assets/Logo.svg" width="16" height="16">
-  <link rel="stylesheet" href="../styles/style.css" />
-  <link rel="stylesheet" href="../styles/add-products.css" />
-  <title>Adicionar productos</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo-busca">
-          <div class="logo">
-            <img src="../assets/logo.png" alt="logo" />
-            <p class="logo-azul">Supermercado</p>
-            <p>Super</p>
-          </div>
-          <input i type="text" placeholder="Qué deseas buscar?" />
-        </div>
-        <div class="login">
-          <a href="login.html"><button type="submit">Login</button></a>
-        </div>
-      </nav>
-    </header>
-    <main>
-      <section class="product-add">
-        <div class="product-add_title">Adicionar nuevo produto</div>
-        <form class="form-cadastro" data-form>
-          <input
-          class="product-add_input__name"
-          type="text"
-          placeholder="Nombre del producto"
-          required
-          data-nome
-          />
-          <input
-          class="product-add_input__url"
-          type="text"
-          placeholder="URL do Produto"
-          required
-          data-url
-          />
-          <input
-          class="product-add_input__price"
-          type="text"
-          placeholder="Precio del producto"
-          required
-          data-preco
-          />
-          <input
-          class="product-add_input__tipo"
-          type="text"
-          placeholder="Tipo de producto"
-          required
-          data-tipo
-          />
-          <textarea
-          class="product-add_textarea__description"
-          type="text"
-          placeholder="Descripcion del producto"
-          required
-          data-description
-          ></textarea>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
+  <title>Supermercado Super</title>
+</head>
 
-          <button type="submit" class="product-add_btn">
-            Adicionar producto
-          </button>
-        </form>
-      </section>
-    </main>
-  </body>
-  <section class="contato">
-    <div class="referencia">
-      <img src="../assets/logo.png" alt="logo" />
-      <p>Supermercado</p>
-      <p>Super</p>
-    </div>
-    <div class="links-uteis">
-      <a href="">Quienes somos</a>
-      <a href="">Politica de Privacidad</a>
-      <a href="">Programa de fidelidad</a>
-      <a href="">Nuestras tiendas</a>
-      <a href="">Quiero ser franquiciado</a>
-      <a href="">Anuncie aqui</a>
-    </div>
+<body>
+  <iframe class="header-iframe" src="header.html"></iframe>
 
-    <div class="form">
-      <p>Hable con nosotros</p>
-      <div class="label-float">
-        <input
-          type="text"
-          name="Nome"
-          id="Nome"
-          class="input-nome"
-          placeholder=""
-        />
-        <label for="Nome" class="label-nome">Nombre</label>
-      </div>
-      <textarea
-        name="mensagem"
-        id="msg"
-        cols="5"
-        rows="5"
-        placeholder="Escribe un Mensaje"
-      ></textarea>
-      <button>Enviar Mensaje</button>
-    </div>
-  </section>
-  <script type="module" src="../controllers/crea-productos-controller.js"></script>
+  <main>
+    <section class="product-add">
+      <div class="product-add_title">Adicionar nuevo produto</div>
+      <form class="form-cadastro" data-form>
+        <input class="product-add_input__name" type="text" placeholder="Nombre del producto" required data-nome />
+        <input class="product-add_input__url" type="text" placeholder="URL do Produto" required data-url />
+        <input class="product-add_input__price" type="text" placeholder="Precio del producto" required data-preco />
+        <input class="product-add_input__tipo" type="text" placeholder="Tipo de producto" required data-tipo />
+        <textarea class="product-add_textarea__description" type="text" placeholder="Descripcion del producto" required
+          data-description></textarea>
+
+        <button type="submit" class="product-add_btn">
+          Adicionar producto
+        </button>
+      </form>
+    </section>
+  </main>
+</body>
+
+<script type="module" src="../controllers/crea-productos-controller.js"></script>
+
+
+<iframe class="footer-iframe" src="footer.html"></iframe>
+</body>
+
 </html>

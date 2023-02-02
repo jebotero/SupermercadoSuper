@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      type="text/css"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/mostrar-producto.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/botones.css" />
+
+    <title>mostrar producto</title>
+  </head>
+  <body>
+    
+    <body>
+      <iframe class="header-iframe" src="header.html"></iframe>
+  
+      <section class="geral-products">
+        <div class="products_title">Mostrar producto seleccionado</div>
+        <section class="products-section" data-producto="">
+          <form action="#" class="form-control" data-form>
+            <img src="" data-url />
+            <input class="product-add_input__name" 
+              type="text"
+              readonly
+              placeholder="Nombre del producto"
+              data-nome
+              onmousedown="return false;"
+            />
+            <input
+              class="product-add_input__price"
+              type="text"
+              readonly
+              placeholder="Precio del producto"
+              data-preco
+              onmousedown="return false;"
+            />
+            <textarea
+              class="product-add_textarea__description"
+              type="text"
+              readonly
+              placeholder="Descripcion del producto"
+              data-description
+              onmousedown="return false;"
+            ></textarea>
+            <input
+              class="product-add_input__tipo"
+              type="text"
+              readonly
+              placeholder="Tipo de producto"
+              data-tipo
+              onmousedown="return false;"
+            />
+          <button class="product-submit_btn" type="submit" onclick="location.href='index.html'">Volver</button>
+        </form>
+      </section>
+    
+    </section>
+  </body>
+
+  <script
+    type="module"
+    src="../controllers/view-producto-controller.js"
+  ></script>
+
+  <iframe class="footer-iframe" src="footer.html"></iframe>
+
+</html>

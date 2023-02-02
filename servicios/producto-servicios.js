@@ -11,6 +11,8 @@ const listarUnProduto = (id) => {
   });
 };
 
+
+
 //POST
 const creaProdutos = (name, imageUrl, price, tipo, description) => {
   return fetch(`http://localhost:3000/producto`, {
@@ -69,5 +71,5 @@ export const productoServices = {
   listarUnProduto,
   creaProdutos,
   alteraProduto,
-  deleteProducto
+  deleteProducto,
 };
