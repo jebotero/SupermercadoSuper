@@ -11,7 +11,7 @@ const nuevoProduto = (name, imageUrl, price, tipo, description, id) => {
             <h1 class="product-tipo"> ${tipo} </h1>
             <p class="descripcion"> ${description}</p>
             
-            <a class="ver-producto" href="../screens/mostrar-producto.html?id=${id}">Ver Produto</a>
+            <a class="ver-producto" href="./screens/mostrar-producto.html?id=${id}">Ver Produto</a>
         </div>   
         `;
   card.innerHTML = contenido;

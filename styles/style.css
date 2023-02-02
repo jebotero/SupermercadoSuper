@@ -1,6 +1,5 @@
 :root {
   --bg-color: #edf5f6fd;
-  --input-placeholder: #d4d4d4;
   --input-bg: #efefef;
   --texto-destaque: #ffff;
   --azul-destaque: #2a7ae4;
@@ -46,9 +45,4 @@ a {
 button {
   cursor: pointer;
 }
-
-/*---------------Header---------------*/
-
-
-/*---------------Formulario Footer---------------*/
 
