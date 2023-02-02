@@ -1,30 +1,22 @@
 <!DOCTYPE html>
-<html lang="ES">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/header.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
-    <link rel="stylesheet" href="../styles/lista-productos.css">
-    <link rel="stylesheet" href="../styles/add-products.css">
-    <link rel="stylesheet" href="../styles/edit-product.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet"/>
-    <title>Buscar</title>
-  </head>
-  <body>
-    <iframe class="header-iframe" src="header.html"></iframe>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda instantánea</title>
+    <link rel="stylesheet" href="../styles/buscar.css">
 
-    <div id="barra_buscar">
-        <label for="Buscar-productos">Buscar productos</label>
-        <input type="text" id="inputSearch" placeholder="¿Qué deseas buscar?">
-      </div>
-
-  </body>
-  
-  <iframe class="footer-iframe" src="footer.html"></iframe>
-  
+</head>
+<body>
+    <input id="buscar" type="text" placeholder="Buscar...">
+    <table>
+        <thead>
+            <th>Nombre</th>
+        </thead>
+        <tbody class="datos">            
+        </tbody>
+    </table>
+    <script src="app.js"></script>
+</body>
 </html>
