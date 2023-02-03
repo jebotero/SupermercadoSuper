@@ -6,7 +6,7 @@ const nuevoProduto = (name, imageUrl, price, tipo, description, id) => {
   const contenido = `
         <div class="produto">
             <h1 class="product-name"> ${name} </h1>
-            <img src="../assets/${imageUrl}" alt="img">        
+            <img src="./assets/${imageUrl}" alt="img">        
             <p class="preco">${formatPrice(price)}</p>
             <h1 class="product-tipo"> ${tipo} </h1>
             <p class="descripcion"> ${description}</p>

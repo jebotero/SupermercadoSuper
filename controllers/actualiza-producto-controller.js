@@ -33,6 +33,6 @@ formulario.addEventListener("submit", (evento) => {
       inputDescripcion.value
     )
     .then(() => {
-      window.location.href = "../screens/mostrar-producto.html";
+      window.location.href = "../screens/produto.html";
     });
 });
