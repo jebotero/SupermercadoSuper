@@ -199,6 +199,46 @@
       "tipo": "Frutas",
       "description": "1000 gramos",
       "id": 32
+    },
+    {
+      "name": "Coca Cola Zero",
+      "imageUrl": "../assets/coca_cola_zero1.png",
+      "price": "4350",
+      "tipo": "Gaseosas",
+      "description": "1.5 litros, botella no retornable. 1 unidad.",
+      "id": 33
+    },
+    {
+      "name": "Coca Cola Zero pack 2",
+      "imageUrl": "../assets/coca_cola_zero.png",
+      "price": "8490",
+      "tipo": "Gaseosas",
+      "description": "Promocion de 2 botellas de 1.5 litros c/u, envase no retornable.",
+      "id": 34
+    },
+    {
+      "name": "Coca Cola Zero en Lata",
+      "imageUrl": "../assets/coca_cola_lata.png",
+      "price": "11350",
+      "tipo": "Gaseosas",
+      "description": "Paquete de 6 latas de cocacola, de 235 ml cada una. Coca cola sin azucar",
+      "id": 35
+    },
+    {
+      "name": "Coca Cola Regular",
+      "imageUrl": "../assets/coca_cola_Roja.png",
+      "price": "4717",
+      "tipo": "Gaseosas",
+      "description": "Botella de 1.5 litros, envase no retornable, Coca Cola regular",
+      "id": 36
+    },
+    {
+      "name": "Coca Cola Regular promocion",
+      "imageUrl": "../assets/coca_cola_roja2.png",
+      "price": "10350",
+      "tipo": "Gaseosas",
+      "description": "Promocion de 2 botellas de 1.5 litros, cocacola regular.  Envase no retornable",
+      "id": 37
     }
   ],
   "usuarios": [

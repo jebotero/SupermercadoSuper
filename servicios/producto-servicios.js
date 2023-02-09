@@ -1,15 +1,40 @@
 //GET
-const listaProductos = () => 
+const listaProductos = () =>
   fetch(`http://localhost:3000/producto`)
     .then((resposta) => resposta.json())
     .catch((error) => console.log(error));
 
-const listarUnProduto = (id) => {
-  return fetch(`http://localhost:3000/producto/${id}`)
-  .then((resposta) => {
-    return resposta.json();
-  });
-};
+const listarPorTipo = (tipo) =>
+  fetch(`http://localhost:3000/producto`)
+    .then(async (resposta) => {
+      const data = await resposta.json();
+      const filteredData = data.filter((item) => {
+        return item.tipo == tipo;
+      });
+      return filteredData;
+    })
+    .catch((error) => console.log(error));
+
+const listarTipos = () => 
+  fetch(`http://localhost:3000/producto`)
+    .then(async (resposta) => {
+      const data = await resposta.json();
+      var tipos = data.reduce(function (arreglo, linea) {
+        if (arreglo.indexOf(linea.tipo) === -1) {
+          arreglo.push(linea.tipo);
+        }
+        return arreglo;
+     }, []);
+ 
+      return tipos;
+    })
+    .catch((error) => console.log(error));
+
+
+const listarUnProduto = (id) =>
+  fetch(`http://localhost:3000/producto/${id}`)
+    .then((resposta) => resposta.json())
+    .catch((error) => console.log(error));
 
 //POST
 const creaProdutos = (name, imageUrl, price, tipo, description) => {
@@ -70,4 +95,6 @@ export const productoServices = {
   creaProdutos,
   alteraProduto,
   deleteProducto,
+  listarPorTipo,
+  listarTipos
 };

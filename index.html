@@ -1,77 +1,56 @@
 <!DOCTYPE html>
 <html lang="ES">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet"/>
-    
-    <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/footer.css" />
-    <link rel="stylesheet" href="./styles/lista-productos.css">
-    <link rel="stylesheet" href="./styles/add-products.css">
-    <link rel="stylesheet" href="./styles/edit-product.css">
-    <link rel="stylesheet" href="./styles/botones.css">
-    
-    <title>Supermercado Super</title>
-  </head>
-  <body>
-    <iframe class="header-iframe" src="./screens/header.html"></iframe>
 
-    <section class="destaque">
-      <div class="banner">
-        <h1>Febrero de promociones</h1>
-        <h4>Productos disponibles</h4>
-      </div>
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap" rel="stylesheet" />
 
-    <section class="botones">
-      <div>
-        <button class="boton-buscar" type="text" onclick="location.href='buscar.html'">Buscar</button>
-      </div>
-        <div>
-          <button class="boton-login" type="text" onclick="location.href='./screens/login.html'">Login</button>
-        </div>
-    </section>
+  <link rel="stylesheet" href="./styles/style.css" />
+  <link rel="stylesheet" href="./styles/header.css" />
+  <link rel="stylesheet" href="./styles/footer.css" />
+  <link rel="stylesheet" href="./styles/lista-productos.css">
+  <link rel="stylesheet" href="./styles/add-products.css">
+  <link rel="stylesheet" href="./styles/edit-product.css">
+  <link rel="stylesheet" href="./styles/botones.css">
 
-    <section class="geral-prods">
-      <div class="prod-titulo">
-        <div class="titulo">
-          <p>Productos</p>
-        </div>
-        <div class="mostrar-mais">
-          <div class="div-verTudo">
-            Ver Todo 
-            <img class="verTudo" src="./assets/Vector.png" alt="seta" />
-          </div>
-        </div>
-      </div>
-     
-      <div class="prod-titulo" titulo-mar></div>
-      <section class="sessao-produtos" data-mar></section>
+  <title>Supermercado Super</title>
+</head>
 
-      <div class="prod-titulo" titulo-verduras></div>
-      <section class="sessao-produtos" data-verduras></section>
+<body>
+  <iframe class="header-iframe" src="./screens/header.html"></iframe>
 
-      <div class="prod-titulo" titulo-frutas></div>
-      <section class="sessao-produtos" data-frutas></section>
+  <section class="destaque">
+    <div class="banner">
+      <h1>Febrero de promociones</h1>
+      <h4>Productos disponibles</h4>
+    </div>
+  </section>
 
-      <div class="prod-titulo" titulo-lacteos></div>
-      <section class="sessao-produtos" data-lacteos></section>
+  <section class="botones">
+    <div>
+      <button class="boton-buscar" type="text" onclick="location.href='buscar.html'">Buscar</button>
+    </div>
+    <div>
+      <button class="boton-login" type="text" onclick="location.href='./screens/login.html'">Login</button>
+    </div>
+  </section>
 
-      <div class="prod-titulo" titulo-granos></div>
-      <section class="sessao-produtos" data-granos></section>
-      
-    </section>
-  </body>
+  <section class="geral-prods">
 
-  <script type="module" src="./controllers/productos-controller.js"></script>
-    
-  <iframe class="footer-iframe" src="./screens/footer.html"></iframe>
-  
+    <div contenido></div>
+
+  </section>
+
+</body>
+
+<script type="module" src="./controllers/productos-controller.js"></script>
+
+<iframe class="footer-iframe" src="./screens/footer.html"></iframe>
+
 </html>
 
 <!-- 
