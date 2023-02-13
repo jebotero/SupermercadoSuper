@@ -37,16 +37,22 @@
         required 
         data-url 
         />-->
-        
           <div>
-            <label for="image-url">URL de imagen:</label>
-            <input type="text" id="image-url">
+            <!--<label for="image-url">URL de imagen:</label>-->
+            <input 
+              class="product-add_input__url" 
+                type="text" 
+                id="image-url"  
+                placeholder="Ubicación de la imagen" 
+                data-url
+                required
+            />
           </div>
           <div>
             <input type="file" id="image-file" style="display:none">
             <button id="select-button">Seleccionar imagen</button>
           </div>
-               
+        
         <input 
         class="product-add_input__price" 
         type="text" 

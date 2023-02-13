@@ -152,3 +152,8 @@ main {
     display: none;
 }
 
+#select-button {
+    align-items: center;
+	font-size: 14px;
+	
+  }
