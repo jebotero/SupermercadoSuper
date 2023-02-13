@@ -267,6 +267,12 @@
       "username": "charmenn.cc@gmail.com",
       "password": "4321",
       "id": 3
+    },
+    {
+      "name": "Admin de prueba",
+      "username": "admin@gmail.com",
+      "password": "admin",
+      "id": 4
     }
   ]
 }
