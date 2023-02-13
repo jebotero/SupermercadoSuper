@@ -21,3 +21,19 @@ form.addEventListener("submit", (evento) => {
       console.log(err);
     });
 });
+
+
+const selectButton = document.getElementById("select-button");
+selectButton.addEventListener("click", function() {
+  document.getElementById("image-file").click();
+});
+
+const imageFile = document.getElementById("image-file");
+imageFile.addEventListener("change", function() {
+  const file = imageFile.files[0];
+  const reader = new FileReader();
+  reader.addEventListener("load", function() {
+    document.getElementById("image-url").value = reader.result;
+  });
+  reader.readAsDataURL(file);
+});

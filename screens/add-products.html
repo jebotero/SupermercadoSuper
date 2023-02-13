@@ -23,12 +23,49 @@
     <section class="product-add">
       <div class="product-add_title">Adicionar nuevo produto</div>
       <form class="form-cadastro" data-form>
-        <input class="product-add_input__name" type="text" placeholder="Nombre del producto" required data-nome />
-        <input class="product-add_input__url" type="text" placeholder="URL do Produto" required data-url />
-        <input class="product-add_input__price" type="text" placeholder="Precio del producto" required data-preco />
-        <input class="product-add_input__tipo" type="text" placeholder="Tipo de producto" required data-tipo />
-        <textarea class="product-add_textarea__description" type="text" placeholder="Descripcion del producto" required
-          data-description></textarea>
+        <input 
+        class="product-add_input__name" 
+        type="text" 
+        placeholder="Nombre del producto" 
+        required 
+        data-nome 
+        />
+       <!-- <input 
+        class="product-add_input__url" 
+        type="text" 
+        placeholder="URL do Produto" 
+        required 
+        data-url 
+        />-->
+        
+          <div>
+            <label for="image-url">URL de imagen:</label>
+            <input type="text" id="image-url">
+          </div>
+          <div>
+            <input type="file" id="image-file" style="display:none">
+            <button id="select-button">Seleccionar imagen</button>
+          </div>
+               
+        <input 
+        class="product-add_input__price" 
+        type="text" 
+        placeholder="Precio del producto" 
+        required 
+        data-preco />
+        <input 
+        class="product-add_input__tipo" 
+        type="text" 
+        placeholder="Tipo de producto" 
+        required 
+        data-tipo />
+        <textarea 
+        class="product-add_textarea__description" 
+        type="text" 
+        placeholder="Descripcion del producto" 
+        required
+        data-description
+        ></textarea>
 
         <button type="submit" class="product-add_btn">
           Adicionar producto
@@ -39,8 +76,6 @@
 </body>
 
 <script type="module" src="../controllers/crea-productos-controller.js"></script>
-
-
 <iframe class="footer-iframe" src="footer.html"></iframe>
 </body>
 

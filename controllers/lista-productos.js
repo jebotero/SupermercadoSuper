@@ -1,15 +1,27 @@
 import { productoServices } from "../servicios/producto-servicios.js";
 import { formatPrice } from "../formatterPrices.js";
 
-const getProducts = (name, imageUrl, price, tipo, description, id) => {
-  const card = document.createElement("div");
+const nuevoTitulo = (tipo) => {
+  const div = document.createElement("div");
+  const contenido = `
+        <div class="prod-titulo" titulo-${tipo}>
+          <div class="titulo">
+            <h1>${tipo}</h1>
+          </div>
+        </div>
+        <section class="sessao-produtos" data-${tipo}></section>
+        `;
+  div.innerHTML = contenido;
+  return div;
+}
 
+const nuevoProduto = (name, imageUrl, price, description, id) => {
+  const card = document.createElement("div");
   const contenido = `
     <div class="produto">
         <h1 class="product-name"> ${name} </h1>
         <img src="${imageUrl}" alt="img">
         <p class="preco">${formatPrice(price)}</p>
-        <h1 class="product-tipo"> ${tipo} </h1>
         <p class="descripcion"> ${description}</p>
 
         <div class="container">
@@ -28,11 +40,11 @@ const getProducts = (name, imageUrl, price, tipo, description, id) => {
     `;
   card.innerHTML = contenido;
   card.dataset.id = id;
-  console.log(card);
+  
   return card;
 };
 
-const productos = document.querySelector("[data-allProducts]");
+const productos = document.querySelector("[contenido]");
 
 productos.addEventListener("click", async (evento) => {
   let deleteButton = evento.target.className === "deleteImage";
@@ -51,19 +63,25 @@ productos.addEventListener("click", async (evento) => {
 
 const render = async () => {
   try {
-    const listaProductos = await productoServices.listaProductos();
+    const tipos = await productoServices.listarTipos();
+    const contenido = document.querySelector("[contenido]"); 
+    tipos.forEach(async (tipo) => {  
+      contenido.appendChild(nuevoTitulo(tipo));
+    });
 
-    listaProductos.forEach((producto) => {
-      productos.appendChild(
-        getProducts(
+    tipos.forEach(async (tipo) => {
+    const resultados = await productoServices.listarPorTipo(tipo);
+    const seccion = document.querySelector("[data-"+tipo+"]"); 
+    resultados.forEach((producto) => {
+      seccion.appendChild(
+        nuevoProduto(
           producto.name,
           producto.imageUrl,
           producto.price,
-          producto.tipo,
           producto.description,
           producto.id
-        )
-      );
+        ));
+      });
     });
   } catch (error) {
     console.log(error);

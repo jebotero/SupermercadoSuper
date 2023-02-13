@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="ES">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" type="text/css" content="width=device-width, initial-scale=1.0"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap"/>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/products.css" />
-    <link rel="stylesheet" href="../styles/header.css" />
-    <link rel="stylesheet" href="../styles/footer.css" />
-    <title>Producto</title>
-  </head>
-  <body>
-    <iframe class="header-iframe" src="header.html"></iframe>
 
-    <section class="geral-products">
-      <div class="products_title">
-        <span>Todos los produtos</span> 
-        <a href="../screens/add-products.html"> 
-          <button class="product-button">Agregar Producto</button> </a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" type="text/css" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@700&display=swap" />
+  <link rel="stylesheet" href="../styles/style.css" />
+  <link rel="stylesheet" href="../styles/products.css" />
+  <link rel="stylesheet" href="../styles/lista-productos.css" />
+  <link rel="stylesheet" href="../styles/header.css" />
+  <link rel="stylesheet" href="../styles/footer.css" />
+  <title>Producto</title>
+</head>
 
-      <section class="products-section" data-allProducts>
-        
-      </section>
+<body>
+  <iframe class="header-iframe" src="header.html"></iframe>
+
+  <section class="geral-products">
+    <div class="products_title">
+      <span>Todos los productos</span>
+      <a href="../screens/add-products.html">
+        <button class="product-button">Agregar Producto</button> </a>
+    </div>
+
+    <section class="products-section">
+
+      <div contenido></div>
+
     </section>
-  
-</body>
-  
-  <script type="module" src="../controllers/lista-productos.js"></script>
 
-  <iframe class="footer-iframe" src="footer.html"></iframe>
+  </section>
+
+</body>
+
+<script type="module" src="../controllers/lista-productos.js"></script>
+
+<iframe class="footer-iframe" src="footer.html"></iframe>
+
 </html>
